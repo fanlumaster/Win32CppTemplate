@@ -1,4 +1,6 @@
-#include "main.h"
+#include <algorithm>
+#include <stdint.h>
+#include <windows.h>
 
 // Window handle.
 HWND g_hWnd;
@@ -61,8 +63,11 @@ void RegisterWindowClass(HINSTANCE hInst, const wchar_t *windowClassName)
     windowClass.lpszMenuName = NULL;
     windowClass.lpszClassName = windowClassName;
     windowClass.hIconSm = LoadIcon(hInst, NULL); //  MAKEINTRESOURCE(APPLICATION_ICON));
-
     static HRESULT hr = RegisterClassExW(&windowClass);
+    if (hr)
+    {
+        //
+    }
 }
 
 HWND CreateMyWindow(const wchar_t *windowClassName, HINSTANCE hInst, const wchar_t *windowTitle, uint32_t width, uint32_t height)
@@ -103,8 +108,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
         RECT clientRect = {};
         GetClientRect(g_hWnd, &clientRect);
 
-        int width = clientRect.right - clientRect.left;
-        int height = clientRect.bottom - clientRect.top;
+        // int width = clientRect.right - clientRect.left;
+        // int height = clientRect.bottom - clientRect.top;
     }
     break;
     case WM_DESTROY:

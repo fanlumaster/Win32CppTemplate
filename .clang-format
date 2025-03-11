@@ -2,6 +2,5 @@
 BasedOnStyle: Microsoft
 IndentWidth: 4
 
-# 不要给头文件排序
-SortIncludes: false
+SortIncludes: true
 ColumnLimit: 300

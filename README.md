@@ -1,23 +1,17 @@
 # About
 
-This is a template for Win32 C++ in Windows.
+This is a template for c++ in Windows.
 
 I use the tool chains below:
 
 - CMake
+- MSVC(provided by Visual Studio 2022)
 - pwsh7
 - Neovim
 - clangd
 
-Notice that, you should replace the line in the `.clangd` file below to your own include path of this project,
+Of course, you can replace Neovim with VSCode.
 
-```
-"-IC:\\EDisk\\CppCodes\\CodeTemplates\\Win32CppTemplate\\includes", # you should replace this to your own include path of this project
-```
+Have fun crating windowsa with C++ in Windows11.
 
-Then, have fun writting C++ in Windows.
-
-After running this template project, you will get a simple Win32 window, like this,
-
-![](https://i.imgur.com/hzUxFYi.png)
-
+![](https://i.ibb.co/C3gqVTQK/image.png)
