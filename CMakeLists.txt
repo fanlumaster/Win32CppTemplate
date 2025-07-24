@@ -12,8 +12,6 @@ add_definitions(
     /DUNICODE=1
 )
 
-include_directories("./includes/")
-
 set(MY_EXECUTABLE_NAME "Win32CppTemplate")
 set(
   SOURCE_FILES
